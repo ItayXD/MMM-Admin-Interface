@@ -248,8 +248,7 @@ JSONEditor.prototype = {
     this.translate = this.options.translate || JSONEditor.defaults.translate;
 
     // Fetch all external refs via ajax
-    var refsTemp = [this.schema, this.options.startval];
-    this._loadExternalRefs(refsTemp, function() {
+    this._loadExternalRefs(this.schema, function() {
       self._getDefinitions(self.schema);
       
       // Validator options
@@ -272,7 +271,6 @@ JSONEditor.prototype = {
       self.root.build();
       self.root.postBuild();
 
-      self.options.startval = self.refs[self.options.startval.$ref];
       // Starting data
       if(self.options.startval) self.root.setValue(self.options.startval);
 

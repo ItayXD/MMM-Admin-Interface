@@ -1,6 +1,6 @@
 {
   "name": "mmm-control-panel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A control panel for magic mirror, or an admin interface, that allows you to edit your settings nicely.",
   "main": "mmm-admin-interface.js",
   "scripts": {
@@ -17,5 +17,9 @@
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.15.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-jquery": "^1.0.0"
   }
 }
