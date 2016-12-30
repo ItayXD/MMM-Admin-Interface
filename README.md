@@ -14,7 +14,8 @@ This an extension for the [MagicMirror²](https://github.com/MichMich/MagicMirro
     ```
 
 ## Usage
-Go to `<HOST>:8181/MMM-Admin-Interface/` Edit away!
+1. Go to `<HOST>:8181/MMM-Admin-Interface/`
+1. Edit away!
 
 ## Sending settings schema for other modules (DEVS)
 You can send your module's config schema via notification, and it will be loaded.
