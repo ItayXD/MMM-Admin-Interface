@@ -4,7 +4,7 @@ This an extension for the [MagicMirror²](https://github.com/MichMich/MagicMirro
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and run: 
     ```
-    git clone https://github.com/paviro/MMM-Callmonitor-Current-Call.git
+    git clone https://github.com/ItayXD/MMM-Admin-Interface.gits
     ```
 1. Add the module to you `config.js`:
     ```
@@ -16,7 +16,7 @@ This an extension for the [MagicMirror²](https://github.com/MichMich/MagicMirro
 ## Usage
 Go to `<HOST>:8181/MMM-Admin-Interface/` Edit away!
 
-## Sending settings schema for other modules (Devs)
+## Sending settings schema for other modules (DEVS)
 You can send your module's config schema via notification, and it will be loaded.
 ```javascript
 let calender_schema = {
