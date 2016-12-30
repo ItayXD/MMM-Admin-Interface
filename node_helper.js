@@ -1,10 +1,4 @@
 /* global module, require */
-/* Magic Mirror
- * Module: MMM-admin-interface
- *
- * By ItayXD
- * GPL-3.0 Licensed.
- */
 const NodeHelper = require( "node_helper" );
 const path = require( "path" );
 const fs = require( "fs" );
@@ -15,7 +9,7 @@ module.exports = NodeHelper.create( {
 	start: function() {
 		console.log( "Starting node helper for: " + this.name );
 		var self = this;
-		var modulePath = `/modules/${this.name}/`;
+		var modulePath = `/${this.name}/`;
 		var configPath = path.resolve( __dirname, "../../config/config.js" );
 
 		//Read Original config file = starting values
@@ -27,7 +21,7 @@ module.exports = NodeHelper.create( {
 		}
 
 		//Send the starting values with the page
-		this.expressApp.get( modulePath + "index", function( req, res ) {
+		this.expressApp.get( modulePath, function( req, res ) {
 			var startingValue = JSON.stringify( originconfig );
 			var html = require( "./index.js" );
 			html = html.replace( "{{starting_value}}",  startingValue );
@@ -62,13 +56,12 @@ module.exports = NodeHelper.create( {
 				}
 				res.writeHead( 200, { "Content-Type": "text/plain" } );
 				res.end( "Settings saved" );    // echo the result back
-				console.log( "The file was saved!" );
+				console.log( "All config saved to file!" );
 			} );
 		} );
 	},
 	socketNotificationReceived: function( notification, payload ) {
 		if ( notification === "schema" && payload && typeof ( payload ) === "object" ) {
-	    	console.log('received')
 			Object.assign( this.schema, payload );
 		}
 	}

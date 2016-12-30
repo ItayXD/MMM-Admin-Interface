@@ -17,9 +17,14 @@ Module.register( "MMM-Admin-Interface", {
 		Log.info( "Starting module: " + this.name );
 	},
 	notificationReceived: function( notification, payload, sender ) {
+		let message = sender ? (
+			this.name + " received a module notification: " + notification + " from sender: " + sender.name
+			) : (
+			this.name + " received a system notification: " + notification );
+		Log.log( message );
 		if ( notification === "schema" && payload && typeof ( payload ) === "object" ) {
 			Log.log( this.name + " recieved schema from " + sender.name );
-			this.sendSocketNotification(notification, payload);
+			this.sendSocketNotification( notification, payload );
 		}
 	},
 } );

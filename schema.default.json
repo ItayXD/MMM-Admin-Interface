@@ -1,4 +1,5 @@
 {
+	"title": "Settings",
 	"type": "object",
 	"format": "grid",
 	"properties": {
