@@ -1,10 +1,14 @@
 {
-  "name": "mmm-control-panel",
-  "version": "0.1",
+  "name": "MMM-Admin-Interface",
+  "version": "0.1.0",
   "description": "A control panel for magic mirror, or an admin interface, that allows you to edit your settings nicely.",
-  "main": "mmm-admin-interface.js",
+  "main": "MMM-Admin-Interface.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItayXD/MMM-Admin-Interface.git"
   },
   "keywords": [
     "\"Magic",
