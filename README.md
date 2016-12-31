@@ -4,7 +4,11 @@ This an extension for the [MagicMirror²](https://github.com/MichMich/MagicMirro
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and run: 
     ```
-    git clone https://github.com/ItayXD/MMM-Admin-Interface.gits
+    git clone https://github.com/ItayXD/MMM-Admin-Interface.git
+    ```
+1. Install the dependencies: 
+    ```
+    cd MMM-Admin-Interface && npm install --only=production
     ```
 1. Add the module to you `config.js`:
     ```
