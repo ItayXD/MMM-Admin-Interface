@@ -16,6 +16,12 @@ This an extension for the [MagicMirror²](https://github.com/MichMich/MagicMirro
         	"module": "MMM-Admin-Interface"
         },
     ```
+1. Whitelist the devices you want to access the mirror's settings from.
+   If you want to whitelist all devices on your local network add:
+   ``` 
+   ipWhitelist: ["192.168.X.1/24 , ::ffff:192.168.X.1/24"], 
+   ```
+   Make sure you replace `X` with the correct number! you can find it by running `ifconfig` in your mirror.
 
 ## Usage
 1. Go to `<HOST>:8080/MMM-Admin-Interface/`
