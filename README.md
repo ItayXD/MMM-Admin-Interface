@@ -58,15 +58,15 @@ this.sendNotification ( "schema", calender_schema );
 
 You can learn more on writing a settings schema for you module at [JSON Editor](https://github.com/jdorn/json-editor).
 
-##Changlelog
+## Changlelog
 
 ### 0.1
  - Cleaning up all console.log dev calls
  - Improved front-end
  - Improved README
 
-###0.0.2
+### 0.0.2
  - Reading and writing directly to config.js
  - Accept settings schemas from other modules via notification
 
-###0.0.1 Initial commit
+### 0.0.1 Initial commit
